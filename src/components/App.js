@@ -2,18 +2,12 @@
 import React from "react";
 import './../styles/App.css';
 import { useState } from "react";
+import ClickCounter from "./Clickcounter";
 
-const App = () => {
-  const [count,setCount]=useState(0)
-  const inc=()=>{
-    if(count >0){
-      setCount(count+1)
-    }
-  }
+const App=()=>{
   return (
     <div>
-      <p>Button clicked {count} times</p>
-        <button onClick={inc}>Click me</button>
+<ClickCounter/>
     </div>
   )
 }
